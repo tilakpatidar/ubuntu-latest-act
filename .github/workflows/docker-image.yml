@@ -23,5 +23,5 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USER}}/ubuntu-latest-act:latest
     - name: Push the Docker image
-      run: docker push ${{secrets.DOCKER_USER}}/ubunut-latest-act:latest
+      run: docker push ${{secrets.DOCKER_USER}}/ubuntu-latest-act:latest
 
